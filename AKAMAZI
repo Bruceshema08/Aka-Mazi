@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GO TO LINK ADDRESSt</title>
+    <style>
+        /* Full-page background */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            background: url('c83fe0b1-40ab-4030-8714-cebad3f638d9.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #fff;
+        }
+
+        /* Transparent overlay for readability */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 15px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: none;
+            margin-bottom: 20px;
+            outline: none;
+        }
+
+        button {
+            width: 300px;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255,255,255,0.5);
+        }
+
+        input::placeholder {
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h2>BRUCE LINK GO</h2>
+        <input type="text" id="userLink" placeholder="Enter full URL (https://example.com)">
+        <br>
+        <button onclick="goToLink()">Go</button>
+    </div>
+
+    <script>
+        function goToLink() {
+            const link = document.getElementById("userLink").value;
+            if (link) {
+                // Open the link in the same tab
+                window.location.href = link;
+                // Or open in new tab: window.open(link, "_blank");
+            } else {
+                alert("Please enter a URL first!");
+            }
+        }
+    </script>
+</body>
+</html>
